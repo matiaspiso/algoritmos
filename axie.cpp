@@ -166,47 +166,6 @@ struct Reptil
 
 
 
-struct axieRPD
-{
-   int ataque;
-   int defensa;
-   int vida;
-};
-struct axieBBM
-{
-   int ataque;
-   int defensa;
-   int vida;
-};
-struct axieABD
-{
-   int ataque;
-   int defensa;
-   int vida;
-};
 
-void AtaqueCombinado(int habilidad, int ataque){
-float res;
-
-(habilidad * ataque) / 500 = res;
-
-}
-
-void main(){
-float res;
-int energia=3;
-int cartas =6;
-
-srand()
-do{
-
-}
-while (/* condition */);
-
-
-
-
-
-}
 
 
