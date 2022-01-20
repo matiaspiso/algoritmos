@@ -1,3 +1,27 @@
+//Una empresa de aviación realiza máximo 500 vuelos semanales a distintos puntos del país y requiere desarrollar un programa para la venta de pasajes. 
+//Para ello dispone de la información de los Vuelos, con un registro por cada uno de los N vuelos que realiza,
+//sin ningún orden, con el siguiente diseño de registro: 
+//a.1) código de vuelo (4 caracteres)   a.2) cantidad de pasajes disponibles (3 dígitos)
+//Se deben ingresar los pedidos de los potenciales compradores y con el siguiente diseño de registro:
+//b.1) código de vuelo    b.2) cantidad de pasajes solicitados
+//El lote finaliza con un código de vuelo = “.”
+//Se pide: 
+
+//1) Cada vez que a un solicitante se le pueden vender sus pasajes, imprimir en el momento la siguiente línea:
+//   Cant de pasajes vendidos     Código de Vuelo
+//                999                                      XXXX
+//Por ahora la salida de datos se hace luego de cada ingreso, más adelante podremos emitir el listado al final enviándolo a un archivo.
+
+//2) Al final del proceso emitir el siguiente listado por código de vuelo
+//Código de Vuelo     Pasajes disponibles    Total Pasajes no vendidos (por falta de disponibilidad) 
+//       XXXX                           999                                  99999
+
+//Cuando se solicita una cantidad de pasajes que no está disponible en su totalidad, se rechaza dicha solicitud por completo
+//y dicha cantidad pasa a acumular la de Total de Pasajes no vendidos para dicho vuelo.
+//Por ejemplo, si del vuelo AB14 quedan en dado momento 20 pasajes disponibles y viene alguien que solicita 50 pasajes para un contingente,
+//se rechazan los 50 pasajes y se acumulan estos 50 a los pasajes rechazados que ya hubiera para dicho vuelo.
+
+
 #include <iostream>
 using namespace std;
 
@@ -27,7 +51,7 @@ void BuscarEnVec(t_vuelo vuelos[], string cod_vuelo, int &pos){
 
 
 
-// Boilerplate
+
 int main(){
 
   // Carga de vuelos:

@@ -1,9 +1,26 @@
+//Una fábrica de calzados elabora 4 modelos de zapato en 5 colores diferentes.
+//Esta fábrica tiene registradas los precios de cada modelo y color y las ventas realizadas, por lo que ingresa los siguientes datos por teclado: 
+//Inicialmente el precio unitario para cada combinación Modelo/Color.
+//Luego ingresa de cada venta hasta Nro. Modelo = 0:
+//  Nro. modelo (1..4), Color (‘A’..’E’), Cantidad vendida (3 díg.)
+//(se puede repetir en las ventas la combinatoria modelo/color)
+
+//Se pide emitir
+//1. los totales vendidos de cada una de las combinatorias modelo / color,
+//2. los totales facturados ($) por cada modelo (independientemente del color)
+//3. los totales facturados ($) por cada color (independientemente del modelo)
+//4. el total general de calzados vendidos en la fábrica.
+
+//Piense que para los puntos 2 y 3 necesitará crear un vector para cada punto.
+
 #include <iostream>
 using namespace std;
 
 int ventas[5][4];
 int precios[5][4];
-
+//
+//Evitamos el ingreso de datos harcodeando lo necesario para ver que funcione el algoritmo.
+//
 int precios_t[5][4] = {
   {132, 170, 210, 240},
   {200, 240, 280, 320},

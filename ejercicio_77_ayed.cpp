@@ -1,3 +1,15 @@
+//Un comercio que vende no más de 30 productos diferentes, cuenta con un archivo de sus productos conteniendo 
+//Cód Producto (3 díg) y PU (precio unitario)
+
+//Se pide:
+//Ingresar por consola pedidos hasta CodP=0 con 
+//Cód Producto y Cantidad Pedida, informando por cada uno 
+//-el pedido solicitado cuesta $9999,99
+//o
+//-el producto solicitado no existe (en caso que se haya solicitado un código de producto inexistente)
+//Nota: para resolver este problema deberá generar un vector con la info de productos
+
+
 #include <iostream>
 #include <fstream>
 using namespace std;
@@ -71,7 +83,6 @@ void ingresarPedidos(){
     }else{
       cout << "Ingrese cantidad deseada: " << endl;
       cin >> cant;
-      
       cout << "El pedido solicitado cuesta: " << cant * precio << endl;
     }
 

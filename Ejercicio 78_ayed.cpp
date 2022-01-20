@@ -1,3 +1,24 @@
+//Un comercio que vende no más de 30 productos diferentes, cuenta con un archivo de sus productos conteniendo
+//Cód Producto (3 díg) PU (precio unitario) y Stk (cantidad en stock)
+
+//Se pide
+//Ingresar por consola pedidos hasta CodP=0 con
+//Cód Producto y Cantidad Pedida, informando por cada uno según haya stock suficiente o no:
+// -el pedido solicitado tiene un importe de $9999,99
+// o
+// -no puede entregarse el pedido por stock insuficiente
+// o
+// -el producto solicitado no existe (en caso que se haya solicitado un código de producto inexistente)
+
+// Una vez finalizado el ingreso, actualizar el archivo de productos con las nuevas cantidades en stock
+
+// Nota: para resolver este problema deberá generar un vector con la info de productos,
+// que luego grabará dentro del archivo de productos para actualizarlo.
+
+//Cada vez que el stock de un pedido es insuficiente, se rechaza dicho pedido completo.
+//Por ejemplo si se solicitan 20 unidades y quedan 15, se rechazan las 20 y continúan quedando las 15 restantes en stock.
+
+
 #include <iostream>
 #include <stdio.h>
 using namespace std;
@@ -48,7 +69,7 @@ int ingresarStock(){
 //fin funciones de ingreso de datos.
 
 //--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-//bloque mati
+
 //funcion no void:
 
 void restarStockArchivo(int codigoProductoABuscar, int stock)
@@ -116,20 +137,19 @@ int main (){
 	int controlStock;
 
 	LeerArchivo(vecProductos); // carga el vector
-//facu
+
 
 	ingresoProductos.codProducto = ingresarCodigoProducto(); //guarda en el registro el ingreso de datos
 	while (ingresoProductos.codProducto != 0){               //mientras el codigo sea diferente de 0 ...
 
 		ingresoProductos.stock = ingresarStock();            //guarda en el registro el ingreso de datos
-		posProductoBuscado = buscarProducto(vecProductos, ingresoProductos.codProducto); 
-		//alan
+		posProductoBuscado = buscarProducto(vecProductos, ingresoProductos.codProducto);
 		if (posProductoBuscado != -1){
 			//luis
 			if (validarStock(vecProductos[posProductoBuscado].stock, ingresoProductos.stock)){ //Teniendo la posicion del producto, tengo que
-				// validar si el stock que me ingresaron corresponde al que ya estaba en el archivo. 
+				// validar si el stock que me ingresaron corresponde al que ya estaba en el archivo.
 
-				restarStock(vecProductos[posProductoBuscado].stock, ingresoProductos.stock, ingresoProductos.codProducto); 
+				restarStock(vecProductos[posProductoBuscado].stock, ingresoProductos.stock, ingresoProductos.codProducto);
 				mostrarPrecioAPagar(vecProductos[posProductoBuscado].precioUnitario, ingresoProductos.stock);
 			}
 			else{

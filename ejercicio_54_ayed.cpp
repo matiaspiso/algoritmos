@@ -1,3 +1,10 @@
+//Se conocen las ventas de un producto a lo largo de 4 sucursales (0 a 3) y de una semana (días 0 lunes a 6 domingo).
+//Para ello se cuenta con la siguiente información sin ningún orden de cada venta de dicho producto 
+//Sucursal (1 a 4)  Día (1 a 7)   Cantidad vendida (entero)   
+// (se puede repetir sucursal y día lo que significa que ese producto tuvo otra venta en dicha sucursal/día)
+//Informar el total de unidades vendidas por cada combinación Sucursal / Día 
+// (en las combinaciones sucursal/día en que no haya ninguna venta, se informará lógicamente 0)
+
 #include <iostream>
 using namespace std;
 

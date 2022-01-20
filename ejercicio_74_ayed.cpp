@@ -1,3 +1,7 @@
+//Generar e imprimir un archivo binario de ventas
+//con la siguiente estructura Cód de Producto y Cantidad Vendida.
+// El lote de datos ingresados finaliza con un Cód de Producto nulo.
+
 #include <iostream>
 #include <fstream>
 using namespace std;

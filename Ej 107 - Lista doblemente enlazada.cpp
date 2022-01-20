@@ -1,3 +1,11 @@
+//      Lista doblemente enlazada
+//Dado un conjunto de CÃ³digos de Producto (numÃ©rico) y Precios Unitarios que finalizan con un 0,
+//generar una Lista ordenada por CÃ³digo de Producto con dichos valores e imprimirla en orden creciente y decreciente.
+//Nota: resolverlo de 2 maneras
+//-Primero generando la lista en orden creciente con InsertaOrdenado y luego a medida que la imprime irla descolgando de la lista y apilÃ¡ndola en una Pila que luego imprimirÃ¡.
+//-Generando una lista doblemente enlazada que la genera en orden creciente mediante InsertaOrdenado, la recorre hacia un lado para imprimirla con un orden, y en el otro sentido para imprimirla con el otro orden.
+
+
 #include <iostream>
 using namespace std;
 
@@ -32,7 +40,7 @@ void insertaOrdenado(Nodo* &lista, TProd RInfo){
       pNue -> ant = antP;
       pNue -> sig = ptr;
       if (ptr != NULL)
-        ptr -> ant = pNue; //salvo que quede como último nodo, quedaba enlazar el ant de ptr con el nuevo
+        ptr -> ant = pNue; //salvo que quede como ï¿½ltimo nodo, quedaba enlazar el ant de ptr con el nuevo
    }
 }
 
@@ -67,7 +75,7 @@ int main() {
       antp = ptr;
       ptr = ptr -> sig;
    }
-   //ahora desde el último nodo (que quedó en antp) recorro la lista hacia atrás
+   //ahora desde el ï¿½ltimo nodo (que quedï¿½ en antp) recorro la lista hacia atrï¿½s
    ptr = antp;
    cout << endl;
    cout << "Lista en orden Decreciente de Cod de Producto"<< endl;

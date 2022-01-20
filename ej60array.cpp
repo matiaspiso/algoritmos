@@ -1,3 +1,5 @@
+// 60) Ingresar N valores correspondientes a los nombres y edades de los alumnos de un curso (N<=70).
+// Informar la edad promedio de este y un listado con los nombres de los alumnos cuya edad supera dicho promedio.
 
 #include <iostream>
 using namespace std;
@@ -14,8 +16,6 @@ int main() {
 //   int ed[70];
 //   string nom[70];
    tAlumno VAlu[70];
-   // 60) Ingresar N valores correspondientes a los nombres y edades de los alumnos de un curso (N<=70).
-   // Informar la edad promedio de este y un listado con los nombres de los alumnos cuya edad supera dicho promedio.
    sumedades = 0;
    ce = 0;
    cout << "Ing. cant. de alumnos del curso (max. 70)" << endl;

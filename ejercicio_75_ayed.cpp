@@ -1,3 +1,8 @@
+//Idem anterior pero donde el main proponga un menú de opciones con Generar archivo y Leer archivo, ambos resueltos modularmente,
+// y opción de Salir del Programa.
+//Que el programa controle si existe el archivo al intentar abrirlo e informe si no existe,
+// por si se intenta leer antes de haberlo generado alguna vez.
+
 #include <iostream>
 #include <fstream>
 using namespace std;

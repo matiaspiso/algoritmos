@@ -1,3 +1,6 @@
+//Ingresar N valores correspondientes a los nombres y edades de los alumnos de un curso (N<=70). 
+//Informar la edad promedio de éste y un listado con los nombres y edades de los alumnos cuya edad superó dicho promedio.
+
 #include <iostream>
 using namespace std;
 
@@ -6,7 +9,7 @@ struct alum {
   int edad;
 };
 
-// Boilerplate
+
 int main(){
 
   int cantidad = 0;

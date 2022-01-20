@@ -1,3 +1,7 @@
+//Ordenamiento por Doble clave
+//Dado un conjunto de Códigos de Producto (numérico), Sucursal (numérico) y Precios Unitarios que finalizan con un 0,
+// generar una Lista ordenada por Código de Producto y Sucursal con dichos valores e imprimirla.
+
 #include <iostream>
 using namespace std;
 
@@ -16,7 +20,7 @@ void insertaOrdenadoPorDobleClave(Nodo* &lista, TProd RInfo){
    Nodo* pNue = new Nodo();
    pNue -> Info = RInfo;
    //inserto adelante si la lista es null, si el cod es menor al 1ro
-   //o si el c�d es igual al 1ro siendo la Suc menor a la 1ra
+   //o si el c�d es igual al 1ro siendo la Suc menor a la 1ra
    if((lista==NULL) || (pNue -> Info.codP < lista -> Info.codP)
       || ((pNue -> Info.codP = lista -> Info.codP) && (pNue -> Info.Suc < lista -> Info.Suc)) ){
       pNue -> sig = lista;
@@ -26,7 +30,7 @@ void insertaOrdenadoPorDobleClave(Nodo* &lista, TProd RInfo){
       Nodo *antP;
 
       //me quedo ciclando mientras el cod a insertar sea mayor al que apunto
-      //o si el c�d es igual y la Suc mayor a la que apunto
+      //o si el c�d es igual y la Suc mayor a la que apunto
       while((ptr != NULL) && ( (pNue -> Info.codP > ptr -> Info.codP)
         || ((pNue -> Info.codP = ptr -> Info.codP) && (pNue -> Info.Suc > ptr -> Info.Suc)) )){
          antP = ptr;

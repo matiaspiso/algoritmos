@@ -1,3 +1,10 @@
+//) Dado un archivo de alumnos que contiene Legajo, Materia, y las notas de Par1, Par2, RecP1 y RecP2
+//(si se aprobó Par1 y/o Par2 en el Rec correspondiente se carga 0).
+//A efectos de simplificar el programa se supone que existe un único recuparatorio por parcial.
+//	Informar
+//-Lista de alumnos aprobados (6 o más en ambos parciales o en los recuperatorios correspondientes)
+//-cantidad de alumnos promocionados, 8 o más en ambos parciales o a lo sumo usando 1 sólo recuperatorio con 8 o más
+
 #include <iostream>
 #include <fstream>
 #include <stdio.h>

@@ -1,3 +1,7 @@
+//Máximos no únicos 
+//Ingresar la nota final de los alumnos de un curso de algoritmos; el ingreso finaliza con nota = 0.
+//Informar la nota máxima y las posiciones de ingreso de alumno que compartieron ese máximo.
+
 #include <iostream>
 using namespace std;
 
